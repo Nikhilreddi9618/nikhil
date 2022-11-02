@@ -1,0 +1,279 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title> Travels</title>
+        <style>
+            body{
+                background-color: rgb(240, 245, 244);
+                background-image: url(https://m.economictimes.com/thumb/msid-66314101,width-1200,height-900,resizemode-4,imgsize-593719/hyderabadairport_gmr.jpg);
+            }
+            .logo{
+                width:200px;
+                border-radius: 40px;
+                height: 200px;
+                filter:brightness(100px);
+                border-color: red;
+                border-style:solid;
+
+            }
+            .search-bar{
+                text-transform:italic;
+                position: absolute;
+                top: 5;
+                right: 5px;;  
+            }
+
+            .heading{
+                text-transform:uppercase;
+                text-align:center;
+                background-color: rgba(161, 37, 134, 0.635);
+                top: 100px;
+                right:2px;
+                width: 70%;
+                height: 20%;
+                color:red;
+                 
+                  
+            }
+            .patner{
+                position: absolute;
+                top:70px;
+                right:2px;
+                width: 200px;
+                border-radius: 100px;
+                
+            }
+            .colabration{
+                text-transform: uppercase;
+                text-align: right;
+                position: absolute;
+                top:175px;
+                right:2px;
+                
+            }
+             .copy-rights{
+                position: fixed; 
+                bottom: 0;
+                width:100%;
+             }
+             .scroll-container{
+                border: 3px solid black;
+                border-radius: 5px;
+                overflow: hidden;
+              }
+              .scroll-text{
+                text-align: right;
+                transform: translateX(-100%);
+                transform: translatex(+100%);
+                animation-duration:8s ;
+                animation-name:text ;
+                animation-direction: alternate;
+                animation-iteration-count:infinite;
+                top:300px;
+              }
+              @keyframes text{
+                from{transform: translateX(-100%);}
+                to{transform: translateX(+100%);}
+
+        
+              }
+              .direction{
+                width:15px;
+                height:10px;
+              }
+              .arrangement div{
+               position: relative;
+               display:inline-block;
+                right:1px;
+                left:25px;
+                font-size: 20px;
+                height:0;
+
+            
+               
+                
+              }
+              .checkbox{
+                position: absolute;
+                top:275px;
+               
+              }
+              .middle{
+                position: relative;
+               
+                
+              }
+              .set{
+                position: relative;
+                left:30px;
+              }
+              .place{
+                height:1px;
+                top:100px;
+              }
+              
+        </style>
+
+    </head>
+    <body style="
+    height:1000px;
+    width:auto;
+    ">
+        <input  class="search-bar" type="text" placeholder="search flight">
+       <div> <img class="logo" src="https://seeklogo.com/images/I/indigo-logo-EDBB4B3C09-seeklogo.com.png"></img></div>
+        <div><img class="patner" src="https://pbs.twimg.com/profile_images/1241781545607692289/UUQuPbwY_400x400.jpg"></img>
+            <p class="colabration">PARTNERS </p></div>
+            <div><p class="copy-rights">
+                Copyright &#97;2023 Travel Air airlinesLtd. All rights reserved. Use of this website indicates your compliance with our Privacy Policy, Conditions of Carriage, Terms and Conditions.
+            </p></div>
+       
+        
+        <div style="background-color:rgb(38, 13, 100);
+        height:auto;
+        color:black;
+        position:fixed;
+        top:0;
+        cursor: pointer;
+        font-size: 20px;
+        ">HELP?</div>
+       <li style="display:inline-block;" >
+        <div>
+            <form name="frm1" method="post" action="details.php">
+           <ul calss="middle"><div class="checkbox">
+           <label class="container">One way
+            <input type="radio"  checked="checked"name="radio">
+            <span class="checkmark"></span></label>
+            <label class="container">Round trip 
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </li>
+        <li class="arrangement">
+        <label for="From"> From</label>
+        <select name="From" id="From">
+            
+            <option value="amritsar">amritsar</option>
+            <option value="visakhapatnam">visakhapatnam</option>
+            <option value="kannur">kannur</option>
+            <option value="goa">goa</option>
+            <option value="bangalore">bangalore</option>
+            <option value="hyderabad">hyderabad</option>
+            <option value="tirupati">tirupati</option>
+            <option value="mumbai">mumbai</option>
+            <option value="chennai">chennai</option>
+            <option value="kolkata">kolkata</option>
+            <option value="delhi">delhi</option>
+            <option value="lucknow">lucknow</option>
+            <option value="indore">indore</option>
+            <option value="ahmedabad">ahmedabad</option>
+        </select>
+        <img  class="direction"src="dirction.png"></img>
+        <label for="To"> To</label>
+        <select name="To" id="To">
+            <option value="amritsar">amritsar</option>
+            <option value="visakhapatnam">visakhapatnam</option>
+            <option value="kannur">kannur</option>
+            <option value="goa">goa</option>
+            <option value="bangalore">bangalore</option>
+            <option value="hyderabad">hyderabad</option>
+            <option value="tirupati">tirupati</option>
+            <option value="mumbai">mumbai</option>
+            <option value="chennai">chennai</option>
+            <option value="kolkata">kolkata</option>
+            <option value="delhi">delhi</option>
+            <option value="lucknow">lucknow</option>
+            <option value="indore">indore</option>
+            <option value="ahmedabad">ahmedabad</option>
+        </select>
+        </li>
+        <br><br>
+
+        
+         </div>
+         <br><br>
+
+         <label> Firstname </label>         
+<input type="text" name="firstname" size="15"/> <br> <br>  
+<label> Middlename: </label>     
+<input type="text" name="middlename" size="15"/> <br> <br>  
+<label> Lastname: </label>         
+<input type="text" name="lastname" size="15"/> <br> <br> 
+<label> Moblie Number: </label>         
+<input type="number" name="Mobile_Number" size="12"/> <br> <br> 
+<label> Aadhar: </label>         
+<input type="number" name="Aadhar" size="12"/> <br> <br> 
+
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="img" accept="image/*">
+    
+  
+         <br><br>
+         <li class="arrangement">
+         <div>
+            <label for="Adult">Adult</label>
+            <select name="Adult" id="Adult">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>   
+         </div>
+         
+            <div>
+            <label for="Child">Child</label>
+            <select name="Child" id="Child">
+             <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>   
+         </div>
+         <div>
+            <label for="Infant">Infant</label>
+            <select name="Infant" id="Infant">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            </select>   
+         </div>
+         <br><br>
+        </li>
+        <li class="arrangement">
+         <div class="set">
+            <lable for="economy">Economy</lable>
+            <select name="economy" id="economy">
+                <option value="Economy">Economy</option>
+                <option value="Business">Business</option>
+                <option value="First">First</option>
+            </select>
+         </div>
+        
+         <br><ul style=" position:absolut;left:135px;">
+         <input type="submit"value="submit"></ul>
+         <div></ul> </form>
+            <div class="scroll-text"><p  class="heading">
+            Welcome to Travel Air.have a safe journey
+        </p></div></div></li>
+
+
+    </body>
+</html>
